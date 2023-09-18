@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
 import { VideoInputForm } from '@/components/video-input-form';
 import { PromptGenerate } from '@/components/prompt-generate';
+import { ThumbnailGenerate } from './components/thumbnail-generate';
 
 export function App() {
   const [temperature, setTemperature] = useState(0.5)
@@ -82,6 +83,10 @@ export function App() {
             temperature={temperature}
             loading={isLoading}
           />
+
+          <Separator />
+
+          <ThumbnailGenerate />
         </aside>
       </main>
     </div>
