@@ -35,3 +35,13 @@ Content-Type: application/json
   "prompt": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
   "temperature": 0.1
 }
+
+###
+
+# @name generate-ai-image
+POST http://localhost:3333/ai/image
+Content-Type: application/json
+
+{
+  "prompt": "Transform Your Business with Innovative People Management"
+}
